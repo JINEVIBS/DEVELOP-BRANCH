@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOMEPAGE</title>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		background-image: url(HOMEPAGE.jpg);
+		position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: sans-serif;
+		}
+	a{
+		font-family: sans-serif;
+		font-size: 30px;
+		float: left;
+		background: #34495e;
+		color: yellow;
+		padding-left: 0;
+		margin: 0;
+		cursor: pointer;
+		transition: 1s;
+		}
+		a:hover{
+		background: black;
+		}
+	.container{
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		padding-left: 8%;
+		padding-right: 8%;
+		box-sizing: border-box;
+	}
+	.container .box{
+		position: relative;
+		width: 326px;
+		height: 220px;
+		background: #3434;
+		margin: 13px;
+		padding: 10px;
+		box-sizing: border-box;
+		display: inline-block;
+	}
+	.container .box .imgBox{
+		position: relative;
+		overflow: hidden;
+	}
+	.container .box .imgBox img{
+		max-width: 100%;
+		transition: transform 2s;
+	}
+	
+	.container .box .details{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		bottom: 10px;
+		right: 10px;
+		background: rgb(0,0,0,.8);
+		transform: scaleY(0);
+		transition: transform .5s;
+	}
+	.container .box:hover .details{
+		transform: scaleY(1);
+	}
+	.container .box .details .content{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+		padding: 15px;
+		color: #fff;
+	}
+	.container .box .details .content h2{
+		margin: 0;
+		padding: 30px;
+		font-size: 30px;
+		color: #7fffd4;
+	}
+	.img{
+		float: left;
+		}
+</style>
+
+</head>
+<body>
+
+	<br>
+
+	<a href="C:\Users\Acer\Desktop\PORFOLIO\FIRST PAGE.html">BACK</a>	
+	<br>
+	<br>
+	<br>
+
+<div class="container">
+			<div class="box">
+				<div class="imgBox">
+					<a href="C:\Users\Acer\Desktop\PORFOLIO\ABOUTME.html">
+						<img src="A1.JPG">
+				</div>
+				<div class="details">
+					<div class="content">
+						<h2><b>ABOUT ME</b></h2>
+					</div>
+				</div></div>
+
+			
+
+				<div class="box"><div class="imgBox">
+					<a href="C:\Users\Acer\Desktop\PORFOLIO\HOBIES.html">
+					<img src="R1.JPG">
+				</div>
+				<div class="details">
+					<div class="content">
+						<h2><b>HOBIES</b></h2>
+					</div>
+				</div></div>
+
+
+
+				<div class="box"><div class="imgBox">
+					<a href="C:\Users\Acer\Desktop\PORFOLIO\SCHOOL ACTIVITIES.html">
+						<img src="ACT.JPG">
+				</div>
+				<div class="details">
+					<div class="content">
+						<h2><b>SCHOOL ACTIVITIES</b></h2>
+					</div>
+				</div></div>
+
+				<div class="box"><div class="imgBox">
+					<a href="C:\Users\Acer\Desktop\PORFOLIO\TRAVELS.html">
+						<img src="TRA1.JPG">
+				</div>
+				<div class="details">
+					<div class="content">
+						<h2><b>TRAVELS</b></h2>
+					</div>
+				</div></div>
+				
+
+				<div class="box"><div class="imgBox">
+					<a href="C:\Users\Acer\Desktop\PORFOLIO\QCU.html">
+						<img src="CU.JPG">
+				</div>
+				<div class="details">
+					<div class="content">
+						<h2><b>QUESTIONS? CONTACT US</b></h2>
+					</div>
+				</div></div>
+
+</div>
+</body>
+</html>

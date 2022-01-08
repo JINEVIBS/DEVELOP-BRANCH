@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SCHOOL ACTIVITIES</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: black;
+		}
+		.slider{
+			width: 800px;
+			height: 500px;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		.slides{
+			width: 500%;
+			height: 500px;
+			display: flex;
+		}
+		.slides input{
+			
+		}
+		.slide{
+			width: 20%;
+			transition: 2s;
+		}
+		.slide img{
+			width: 800px;
+			height: 500px;
+		}
+		.navigation-manual{
+			position: absolute;
+			width: 800px;
+			margin-top: -40px;
+			display: flex;
+			justify-content: center;
+		}
+		.manual-btn{
+			border: 2px  solid #40d3dc;
+			padding: 5px;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: 1s;
+		}
+		.manual-btn:not(:last-child){
+			margin-right: 40px;
+		}
+		.manual-btn:hover{
+			background: yellow;
+		}
+		#radio1:checked ~ .first{
+			margin-left: 0;
+		}
+		#radio2:checked ~ .first{
+			margin-left: -22.1%;
+		}
+		#radio3:checked ~ .first{
+			margin-left: -42.1%;
+		}
+		.navigation-auto{
+			position: absolute;
+			display: flex;
+			width: 800px;
+			justify-content: center;
+			margin-top: 460px;
+		}
+		.navigation-auto div{
+			border: 2px solid yellow;
+			padding: 5px;
+			border-radius: 10px;
+			transition: 1s;
+		}
+		.navigation-auto div:not(:last-child){
+			margin-right: 40px;
+		}
+		#radio1:checked ~ .navigation-auto .auto-btn1{
+			background: blue;
+		}
+		#radio2:checked ~ .navigation-auto .auto-btn2{
+			background: blue;
+		}
+		#radio3:checked ~ .navigation-auto .auto-btn3{
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+
+	<a href="C:\Users\Acer\Desktop\PORFOLIO\PORFOLIO.html">BACK</a>
+
+		<div class="slider">
+			<div class="slides">
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+
+				<div class="slide first">
+					<img src="SA1.JPG" alt="">			
+				</div>
+				<div class="slide">
+					<img src="SA2.JPG" alt="">
+				</div> 
+				<div class="slide">
+					<img src="CLEAN UP.JPG" alt="">
+				</div>
+				
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+				</div>
+			</div>	
+
+			<div class="navigation-manual">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+			</div>
+
+		</div>
+
+		<br>
+
+</body>
+</html>
